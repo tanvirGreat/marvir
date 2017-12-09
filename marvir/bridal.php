@@ -1,51 +1,35 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
+<head>
+ <link rel="stylesheet" type="text/css" href="marvir.css">
+</head>
 <body>
+
 <?php 
+
+
 $servername = "localhost";
   $username = "choahm5_m";
   $password = "Tan@01737480110";
-  $conn = new mysqli($servername, $username, $password);
+  $db="choahm5_m";
+  $conn = new mysqli($servername, $username, $password,$db);
   if ($conn->connect_error) {
     die("connection failed :" . $conn->connect_error);}
 
   
-    include 'header.php';
-    if ($result->num_rows > 0) {
 
-   
-                    echo"<table>".
-  "<thead>
-    <tr>
-      
+    include 'header.php'; 
+    $sql= "SELECT name, price from products" or die (mysql_error());
+  if ($result = $conn->query($sql)){
     
-  
+       while ($row = $result->fetch_assoc()) {
+        echo $row["name"],$row["price"];
        
-       <th>Name</th>
-          
-    
-          <th>Price</th>
-           
-    </tr>
-  </thead>";
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
 
-echo
-  "<tbody>
-    <tr>".
-      
-        "<td>". $row["name"]. "</td>".
-      
-      "<td>". $row["price"]. "</td>".
-    "</tr>
-  </tbody>";
+    }
+$result->free();}
 
-        
-    
-    echo"</table>". "<br>";}
- 
     ?>
-
 
 </body>
 </html>

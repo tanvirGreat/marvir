@@ -1,6 +1,6 @@
 /*Strip the ul of padding and list styling*/
-body{background-color: #ffffff;
-margin-left: 0px;
+body{background-color: green;
+margin-left: 10px;
 margin-right: 0;
 overflow:hidden;
 }
