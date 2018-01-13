@@ -13,10 +13,8 @@ $conn = new mysqli ($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
 	die ("connection failed:" . $conn->connect_error);
 } 
-?> 
 
-         <?php
-    
+
 $id=$_GET['id'];
 $sql = "SELECT * FROM products ORDER by id ";
     
@@ -29,7 +27,7 @@ if ($result->num_rows > 0) {
 
     // output data of each row
     while($row = $result->fetch_assoc()) {
-    	$id = $row['id'];
+      $id = $row['id'];
 
 ?>
 

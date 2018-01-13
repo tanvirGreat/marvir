@@ -54,6 +54,11 @@ $total=0;
   <a href= index.php>Home</a></li>
  
 </div>
-<br> <br> <hr size=1;> 
+
+<br>  <form action="search.php" method="GET">
+<input type="submit" value="Search" style="float: right;" /> 
+    <input type="text" name="query" style="float: right;" /><br><hr size=1;> 
+        
+        </form>
 </body>
 </html>

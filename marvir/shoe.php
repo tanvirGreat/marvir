@@ -13,9 +13,9 @@ $conn = new mysqli ($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die ("connection failed:" . $conn->connect_error);
 } 
-?> 
 
-         <?php
+
+ 
     
 $id=$_GET['id'];
 $sql = "SELECT * FROM shoes ORDER by id ";
