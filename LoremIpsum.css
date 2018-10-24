@@ -1,0 +1,31 @@
+
+body{
+background-color:black;}
+h1{
+	background-color: transparent;
+outline:none;}
+/*Box model  */
+#BoxModel{
+background-color: white;
+    width: 55%;
+    border: 25px solid white;
+    padding: 1%;
+     margin-top: 5%;
+    margin-bottom: 2%;
+    margin-right: 50%;
+    margin-left: 20%;}
+/* section1 */
+#rollover1{
+font: 120% arial, sans-serif;
+border:0.5px}
+#rollover2{
+font: 120% arial, sans-serif;}
+#rollover3{
+font: 120% arial, sans-serif;}
+
+#one{
+background:purple; border:none; outline:none; width:100%;}
+#two{
+background:purple; border:none; outline:none; width:100%;}
+#three{
+background:purple; border:none; outline:none; width:100%;}
